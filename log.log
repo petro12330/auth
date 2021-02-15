@@ -1,0 +1,146 @@
+Привdfgdfgdfgdте
+Привdfgdfgdfgdте
+POST - http://127.0.0.1:8000/api/v1/login/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '308', 'Content-Type': 'multipart/form-data; boundary=--------------------------530096482662106868777326', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': 'fc2d55cb-855a-4f70-af53-e363cc7fb521', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['123adasd21ad23233411'], 'password': ['Aczeff12^3234!@#$%^&*']}>
+
+Response: 201
+POST - http://127.0.0.1:8000/api/v1/login/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '308', 'Content-Type': 'multipart/form-data; boundary=--------------------------688470916448458887370024', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': 'ce4fb660-d5a4-4932-99d8-f0532e234f69', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['123adasd21ad23233411'], 'password': ['Aczeff12^3234!@#$%^&*']}>
+
+Response: 201
+POST - http://127.0.0.1:8000/api/v1/login/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '308', 'Content-Type': 'multipart/form-data; boundary=--------------------------558051157008544530534399', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': 'f2fadc94-8054-4463-ab95-bbe46d2407f6', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['123adasd21ad23233411'], 'password': ['Aczeff12^3234!@#$%^&*']}>
+
+Response: 201
+POST - http://127.0.0.1:8000/api/v1/status/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '484', 'Content-Type': 'multipart/form-data; boundary=--------------------------641932526146775230567404', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': '306a7c3e-6c6d-4a54-b65f-51ee346fc2a1', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['123adasd21ad232334112'], 'password': ['Aczeff12^3234!@#$%^&*'], 'access_token': ['b5b46f000d1997037fc32a872967d3a2dafaaa3de7162537907d48eb7d7b855b']}>
+
+Response: 400
+POST - http://127.0.0.1:8000/api/v1/login/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '299', 'Content-Type': 'multipart/form-data; boundary=--------------------------958777458721308361616377', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': '59dd755f-4ea0-4ee7-becd-d84b4ba81620', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['жека-членосос'], 'password': ['1234123']}>
+
+Response: 400
+POST - http://127.0.0.1:8000/api/v1/login/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '306', 'Content-Type': 'multipart/form-data; boundary=--------------------------051829783333998558881152', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': '529af795-8d88-4c2c-bb26-78fdcae44aa0', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['жека-членосос'], 'password': ['JKV;hd1sdnlo%&']}>
+
+Response: 400
+POST - http://127.0.0.1:8000/api/v1/login/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '289', 'Content-Type': 'multipart/form-data; boundary=--------------------------191368798342284924891017', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': '86e01d86-68bd-4db0-97b2-3507539271be', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['жека'], 'password': ['JKV;hd1sdnlo%&']}>
+
+Response: 400
+POST - http://127.0.0.1:8000/api/v1/login/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '286', 'Content-Type': 'multipart/form-data; boundary=--------------------------841152404665644096711976', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': '3eee9ddf-baa8-46ae-b486-457254647ad9', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['Jjeka'], 'password': ['JKV;hd1sdnlo%&']}>
+
+Response: 400
+POST - http://127.0.0.1:8000/api/v1/reg/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '286', 'Content-Type': 'multipart/form-data; boundary=--------------------------329638137359211031010249', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': 'c1f5208a-b9ea-4c9c-a81d-441653bb1b34', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['Jjeka'], 'password': ['JKV;hd1sdnlo%&']}>
+
+Response: 201
+POST - http://127.0.0.1:8000/api/v1/login/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '286', 'Content-Type': 'multipart/form-data; boundary=--------------------------032631226227858441998672', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': '4624c1d5-c6ec-422a-9fd5-76e6b4c20da4', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['Jjeka'], 'password': ['JKV;hd1sdnlo%&']}>
+
+Response: 201
+POST - http://127.0.0.1:8000/api/v1/status/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '286', 'Content-Type': 'multipart/form-data; boundary=--------------------------771765071110418144834185', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': 'aa25820a-e2a9-46c7-9bca-95992c3d020d', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'login': ['Jjeka'], 'password': ['JKV;hd1sdnlo%&']}>
+
+Response: 400
+POST - http://127.0.0.1:8000/api/v1/status/
+
+Query Params
+<QueryDict: {}>
+
+Headers
+{'Content-Length': '231', 'Content-Type': 'multipart/form-data; boundary=--------------------------095538580044380227590853', 'User-Agent': 'PostmanRuntime/7.26.10', 'Accept': '*/*', 'Postman-Token': '450b4850-d204-4d59-8bf7-2ab0f0f8c9e5', 'Host': '127.0.0.1:8000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive'}
+
+Data:
+<QueryDict: {'access_token': ['efb2964e5e6139469f50fb05b5679a821f3a542675bb4cb8560c43fd6aad1874']}>
+
+Response: 201
