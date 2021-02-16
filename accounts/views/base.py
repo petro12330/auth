@@ -46,7 +46,7 @@ class BaseUsersAuthorization(BaseMethods):
 
             return {"data": tokens, 'status': 201}
         else:
-            return {"data": data_status["message"], "status": 400}
+            return {"data": data_status["status"], "status": 400}
 
 
 class BaseUserRegistration(BaseMethods):
@@ -77,16 +77,12 @@ class BaseUserSession(BaseMethods):
     def session_controller(self, request):
         request_data = self.get_request_data(request)
         data_status = data_analizator_token(request_data)
-        new_tokens = None
         if data_status["status"] == "Success":
-            try:
-                token = request_data['access_token']
-            except KeyError:
-                token = request_data['refresh_access_token']
-                new_tokens = update_user_tokens(token, self.access_token_ttl, self.token_size, self.refresh_token_ttl)
-            if verification_user_token(token):
-                if new_tokens:
-                    return {"data": new_tokens, "status": 201}
+            data = verification_user_token(request_data)
+            if data["status"] == "Success":
                 return {"data": 'Success', "status": 201}
+            elif data["status"] == 'Your access_token was burned':
+                tokens = update_user_tokens(request_data['refresh_access_token'],self.access_token_ttl, self.token_size, self.refresh_token_ttl)
+                return {"data": tokens, 'status': 201, 'massage': data['status']}
             return {"data": 'Bad Request', "status": 400}
         return {"data": data_status["status"], "status": 400}

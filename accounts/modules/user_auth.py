@@ -4,11 +4,15 @@ import redis
 r = redis.Redis()
 
 
-def verification_user_token(data: str) -> bool:
-    user = r.exists(data)
-    if user:
-        return True
-    return False
+def verification_user_token(data: dict) -> dict:
+    status = ''
+    access_token = data['access_token']
+    refresh_access_token = data['refresh_access_token']
+    if r.exists(access_token):
+        status = 'Success'
+    elif r.exists(refresh_access_token):
+        status = 'Your access_token was burned'
+    return {'status': status}
 
 
 def crate_user_tokens(access_token_ttl, token_size, refresh_token_tll, user_uuid):
@@ -27,9 +31,7 @@ def crate_user_tokens(access_token_ttl, token_size, refresh_token_tll, user_uuid
     }
 
 
-def update_user_tokens(data, access_token_ttl, token_size, refresh_token_tll,):
+def update_user_tokens(data, access_token_ttl, token_size, refresh_token_tll):
     uuid = str(r.get(data))
-    print(uuid)
-    # r.delete(data)
+    r.delete(data)
     return crate_user_tokens(access_token_ttl, token_size, refresh_token_tll, uuid)
-

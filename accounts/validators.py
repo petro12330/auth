@@ -4,7 +4,7 @@ from .modules.hash_password import hash_user_password
 
 
 def data_analizator_token(request_data: dict) -> dict:
-    if 'access_token' in request_data or 'refresh_access_token' in request_data:
+    if 'access_token' in request_data and 'refresh_access_token' in request_data:
 
         return {"status": "Success"}
     else:
