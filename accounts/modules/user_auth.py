@@ -27,5 +27,9 @@ def crate_user_tokens(access_token_ttl, token_size, refresh_token_tll, user_uuid
     }
 
 
-def update_user_tokens(data):
-    pass
+def update_user_tokens(data, access_token_ttl, token_size, refresh_token_tll,):
+    uuid = str(r.get(data))
+    print(uuid)
+    # r.delete(data)
+    return crate_user_tokens(access_token_ttl, token_size, refresh_token_tll, uuid)
+

@@ -77,12 +77,16 @@ class BaseUserSession(BaseMethods):
     def session_controller(self, request):
         request_data = self.get_request_data(request)
         data_status = data_analizator_token(request_data)
+        new_tokens = None
         if data_status["status"] == "Success":
             try:
                 token = request_data['access_token']
             except KeyError:
                 token = request_data['refresh_access_token']
+                new_tokens = update_user_tokens(token, self.access_token_ttl, self.token_size, self.refresh_token_ttl)
             if verification_user_token(token):
+                if new_tokens:
+                    return {"data": new_tokens, "status": 201}
                 return {"data": 'Success', "status": 201}
             return {"data": 'Bad Request', "status": 400}
         return {"data": data_status["status"], "status": 400}
